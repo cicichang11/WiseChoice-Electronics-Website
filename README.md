@@ -1,5 +1,5 @@
 # WiseChoice-Electronics-Website
-This is an electronics e-commerce website built for the company WiseChoice Electronics. It allows users to view and search products, and admins to manage the product catalog.
+This is an electronics e-commerce website built for the company WiseChoice Electronics. It allows users to view and search products, and admins to manage the product catalog. Please visit the website at https://cicichang11.github.io/WiseChoice-Electronics-Website/project_description.html
 
 ## Website Pages
 - Homepage (index.php) - Provides overview of site and some sample products.
