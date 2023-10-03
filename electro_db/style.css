@@ -1,0 +1,27 @@
+@font-face{
+	font-family: "KanitLight";
+	src:url("fonts/Kanit-Light.ttf");
+}
+
+#header {
+	background-color: #242582;
+	background-size: cover;
+	height: 350px;
+}
+
+#header h1{
+	font-family: "KanitLight";
+	line-height: 350px;
+	color: #FFF;
+	font-size: 45px;
+	text-shadow: 5px 5px 20px #696969;
+}
+
+body{
+	font-family: "KanitLight";
+}
+
+
+p{
+	font-size: 1.2em;
+}

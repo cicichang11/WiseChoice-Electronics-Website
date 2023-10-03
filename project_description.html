@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ITP303 Project Description | Cici Chang</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+	</style>
+</head>
+<body>
+	<h3 class="mt-5 mb-2 text-center">Full 2022 ITP303 Final Project Summary</h3>
+	<h5 class="text-center text-primary">WiseChoice Electronics Product Listing</h5>
+	<h5 class="mb-4 text-center text-primary">Cici Chang</h5>
+
+	<div class="row">
+		<div class="container col-10">
+			<p><strong>Topic & Purpose</strong></p>
+			<p>This website is dedicated to a theoretical electronics e-commerce company WiseChoice and serves the purpose of  product listing for the company, facing both registered and non registered users, and administrators of the company. This site gives insights into electronic products’ information for the users and offers an easily manageable database for administrators.</p>
+
+			<p><strong>Instructions</strong></p>
+			<ul>
+				<li>
+					<p><strong>user database & credentials:</strong><p>
+					<ul>
+						<li>The user database of the site is password-protected. </li>
+						<li>The users and administrators need to register using username, email address, and password, where the password would be encrypted using sha256 hashing function and saved in the database. </li>
+						<li>After signing up an account, the users and administrators can then login using their username and password. On the back end, we would be verifying the information to decide if we can log the user in.</li>
+						<li>Administrators have an extra column of information called AdminNumber in the database, which can not be accessed through login or signup systems, nor can be changed. Administrators are pre-assigned roles with presetted admin numbers in the database before operating the site, for security purposes.</li>
+						<li>
+							<p class="text-primary">There are 3 pre-assigned admin accounts, you can use these to check my work</p>
+							<ul class="text-primary">
+								<li>username: admin1; password: admin1; admin_num: 123</li>
+								<li>username: admin2; password: admin2; admin_num: 234</li>
+								<li>username: admin3; password: admin3; admin_num: 345</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<p class="mt-4"><strong>3 user access level:</strong><p>
+					<ul>
+						<li>
+							<p><strong>For users that are not logged in, they can access the home page (index.php), preference filter page(filter.php), the product listing page(listing.php), and detail page about each product (detail_image.php), with limitations.</strong></p>
+							<ul>
+								<li>Home page is the same as logged in users, with a button linked to the preference page. </li>
+								<li>Non logged in users can not set price preferences on the preference filter page.</li>
+								<li>Non logged in users can not view prices on the product listing page.</li>
+							</ul>
+						</li>
+						<li>
+							<p><strong>For logged in users, they can access the home page (index.php), preference filter page(filter.php), and the product listing page(listing.php), without limitations.</strong></p>
+							<ul>
+								<li>Home page is the same as non-logged in users, with a button linked to the preference page. </li>
+								<li>Logged in users can set all the preferences on the preferences page including price.</li>
+								<li>Logged in users can view the prices on the product listing page.</li>
+							</ul>
+						</li>
+						<li>
+							<p><strong>For administrators, they can access the home page (index.php), admin searching page (admin_search.php), admin product listing page(admin_listing.php), editing page(edit.php), delete page(delete_product.php), and add page(add_product.php), with some variations.</strong></p>
+							<ul>
+								<li>On the home page, administrators can only access a button that links to the admin accessible listing page, different from what users’ listing page.</li>
+								<li>On the admin product listing page, administrators have links to edit a product information, buttons to delete products, a button to add a product, and a button to the admin searching page to search for products using keywords in names.</li>
+								<li>Users don't have access to these edit, delete, and add functions.</li>
+							</ul>
+						</li>
+						<li>
+							The navigation bar also links to the appropriate search / filter page and product listing page, depending on whether the logged in person is a user or an admin.
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<p class="mt-4"><strong>Operations: </strong><p>
+					<ul>
+						<li>Logged-in and not logged-in users can use the site to view the information about the products that they are looking for, including brands, price, weight, conditions, shipping, price, and more details into the images on the detailed page.</li>
+						<li class="text-primary">Administrators are the only ones with the right to manage and make changes to the product the company possesses. Such as:</li>
+						<ul>
+							<li>Edit</li>
+							<li>Add</li>
+							<li>Delete</li>
+						</ul>
+					</ul>
+				</li>
+			</ul>
+
+			<p class="mt-5"><strong>Data Source</strong></p>
+			<ul>
+				<li>The product database the site relies on is modified from the Electronic Products and Pricing Data on data.world.</li>
+				<li>The link: <a href="https://data.world/datafiniti/electronic-products-and-pricing-data">https://data.world/datafiniti/electronic-products-and-pricing-data</a></li>
+				<li>Description: This is a list of over 7,000 electronic products with pricing information across 10 unique fields provided by Datafiniti's Product Database. The dataset also includes the brand, category, merchant, name, source, and more.</li>
+			</ul>
+
+			<p class="mt-5"><strong>Database Diagram</strong></p>
+			<img src="electro_db/img/database_diagram.png" class="w-75" alt="database diagram">
+
+			<p class="mt-5"><strong>Extras</strong></p>
+			<ul class="mb-5">
+				<li><strong>Paginations</strong>: on both users’ and administrator’ product listing pages.</li>
+				<li><strong>Different user permission levels</strong>: as I described above, there are three levels of users– non-logged-in users, logged in users, and administrators. </li>
+				<li><strong>File upload</strong>: on the administrators’ add a product page, administrators would need to upload the image of the product through file upload. All of the images will be saved in a folder called uploads. </li>
+			</ul>
+
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer-copyright text-center py-3">© ITP303 Final Proejct 2022 Copyright: Cici Chang</div>
+	</footer>
+	
+	
+
+</body>
+</html>
